@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VocFilm</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reviewfilm.css" />
+  </head>
+  <body>
+    <header
+      class="header-nav container-fluid text-white d-flex align-items-center"
+      style="
+        background-image: url('https://img.freepik.com/premium-vector/film-strip-isolated-black-background_305440-552.jpg?w=900');
+      "
+    >
+      <h1 class="text-white ms-3">VocFilm</h1>
+      <nav class="nav-icons ms-auto d-flex">
+        <a href="#" class="btn btn-home box-shadow active"
+          ><i class="bi bi-house-door-fill"></i> Home</a
+        >
+        <a href="#" class="btn btn-watchlist box-shadow"
+          ><i class="bi bi-bookmark-fill"></i> Watchlist</a
+        >
+        <a href="#" class="btn btn-popular box-shadow"
+          ><i class="bi bi-star-fill"></i> Popular</a
+        >
+      </nav>
+      <div class="ms-3">
+        <button class="btn btn-login me-2">
+          <i class="bi bi-box-arrow-in-right"></i> Login
+        </button>
+        <button class="btn btn-signup">
+          <i class="bi bi-person-plus-fill"></i> Sign Up
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="search-section">
+        <h2>WELCOME</h2>
+        <p>Silahkan Cari Film Yang Akan Kamu Review</p>
+        <div class="input-group w-50 mx-auto">
+          <span class="input-group-text">
+            <i class="bi bi-search search-icon"></i>
+          </span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Silahkan Cari Disini"
+          />
+        </div>
+      </section>
+
+      <section id="trending-section">
+        <h2><i class="bi bi-arrow-up-circle"></i> Trending Films</h2>
+        <div class="list-film" id="trending"></div>
+      </section>
+
+      <section id="latest-section">
+        <h2><i class="bi bi-clock"></i> Latest Films</h2>
+        <div class="list-film" id="latest"></div>
+      </section>
+    </main>
+
+    <footer class="footer-custom">
+      <p>©Vocasia 2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="reviewfilm.js"></script>
+  </body>
+</html>
